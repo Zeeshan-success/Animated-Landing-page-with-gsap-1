@@ -78,7 +78,7 @@ window.addEventListener("wheel", (e) => {
   if (e.deltaY > 0) {
     gsap.to("#movingtext2", {
       transform: "translateX(0%)",
-      duration: 10,
+      duration: 5,
       repeat: -1,
 
       ease: "none",
@@ -249,19 +249,8 @@ rotate4.addEventListener("mouseout", () => {
   });
 });
 
-const hoverbtnopen = document.querySelectorAll("#hoverbtnopen");
-console.log(hoverbtnopen);
-
-hoverbtnopen.forEach((btn) => {
-  btn.addEventListener("mouseenter", {
-    // btn.innerHTML = `Add to Cart <i class="fa-solid fa-cart-plus"></i>`;
-  });
-});
-
 gsap.from("#reliable", {
   x: -100,
-  // duration: 2,
-
   scrollTrigger: {
     trigger: "#reliable",
 
@@ -270,7 +259,6 @@ gsap.from("#reliable", {
 });
 gsap.from("#video", {
   x: 100,
-  // duration: 2,
 
   scrollTrigger: {
     trigger: "#video",
@@ -305,7 +293,6 @@ gsap.from("#categorie", {
 
 gsap.from("#productmoment", {
   x: -700,
-  // duration: 2,
 
   scrollTrigger: {
     trigger: "#productmoment",
@@ -315,7 +302,6 @@ gsap.from("#productmoment", {
 });
 gsap.from("#myhand", {
   x: 700,
-  // duration: 2,
 
   scrollTrigger: {
     trigger: "#myhand",

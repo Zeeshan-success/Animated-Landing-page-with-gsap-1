@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 const tl = gsap.timeline();
 
 tl.from("#navBar img", {

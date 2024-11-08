@@ -250,15 +250,20 @@ rotate4.addEventListener("mouseout", () => {
 const hoverbtnopen = document.querySelectorAll(".hoverbtnopen");
 
 hoverbtnopen.forEach((btn) => {
+  let chngbtn = btn.children[0].querySelector("button");
+  let tween = gsap.to(chngbtn, {
+    scale: 1.2,
+    repeat: -1,
+    yoyo: true,
+    paused: true,
+  });
   btn.addEventListener("mouseenter", () => {
-    let chngbtn = btn.children[0].querySelector("button");
-
     chngbtn.innerHTML = "Add to cart <i class='fa-solid fa-cart-plus'></i>";
+    tween.play();
   });
   btn.addEventListener("mouseleave", (e) => {
-    let chngbtn = btn.children[0].querySelector("button");
-
     chngbtn.innerHTML = "<i class='fa-solid fa-cart-plus'></i>";
+    tween.pause();
   });
 });
 

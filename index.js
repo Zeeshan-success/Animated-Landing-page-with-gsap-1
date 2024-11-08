@@ -247,6 +247,21 @@ rotate4.addEventListener("mouseout", () => {
   });
 });
 
+const hoverbtnopen = document.querySelectorAll(".hoverbtnopen");
+
+hoverbtnopen.forEach((btn) => {
+  btn.addEventListener("mouseenter", () => {
+    let chngbtn = btn.children[0].querySelector("button");
+
+    chngbtn.innerHTML = "Add to cart <i class='fa-solid fa-cart-plus'></i>";
+  });
+  btn.addEventListener("mouseleave", (e) => {
+    let chngbtn = btn.children[0].querySelector("button");
+
+    chngbtn.innerHTML = "<i class='fa-solid fa-cart-plus'></i>";
+  });
+});
+
 gsap.from("#reliable", {
   x: -100,
   scrollTrigger: {

@@ -1,250 +1,206 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .nav-bar {
-    height: 15vh;
-    
+  height: 15vh;
 }
 
 .nav-item p:hover {
-
-    cursor: pointer;
-
-    
+  cursor: pointer;
 }
 .nav-item img:hover {
-
-    cursor: pointer;
-
-    
+  cursor: pointer;
 }
 
-.hero-text{
-    font-size: 10vh;
-    font-weight: 700;
-    line-height:12vh;
+.hero-text {
+  font-size: 10vh;
+  font-weight: 700;
+  line-height: 12vh;
 }
 
 .hover-effect div img {
-
-    border-radius: 2rem;
+  border-radius: 2rem;
 }
 
+.movingrow {
+  background-color: rgb(71, 198, 244);
 
-.movingrow{
-    background-color: rgb(71, 198, 244);
-    
-    rotate: -1deg;
-    position: relative;
-    z-index: 1;
+  rotate: -1deg;
+  position: relative;
+  z-index: 1;
 }
-.movingrow2{
-    rotate: 1deg;
-    position: relative;
-    z-index: 20;
-}
-
-.bestsellers{
-    font-size: 5rem;
-    font-weight: 800;
-}
-.rotateparent{
-    overflow: hidden;
-    position: relative;
-    background-color: #0061F4;
-    border-radius: 2rem;
+.movingrow2 {
+  rotate: 1deg;
+  position: relative;
+  z-index: 20;
 }
 
-
-
-
+.bestsellers {
+  font-size: 5rem;
+  font-weight: 800;
+}
+.rotateparent {
+  overflow: hidden;
+  position: relative;
+  background-color: #0061f4;
+  border-radius: 2rem;
+}
 
 .rotateparent button {
-
-    position: absolute;
-    top: 75%;
-    left: 75%;
-    
-    
-    
-    
-  
-    
-    
-   
-}
-.seeproduct{
-    margin-top: 6rem;
+  position: absolute;
+  top: 75%;
+  right: 10%;
 }
 
-
-.curvebox{
-    background-color: #3168C5;
-    color: white;
-
-    margin-top: 3rem;
-
-    
+.seeproduct {
+  margin-top: 6rem;
 }
 
-.curvebox video{
-    border-radius: 2rem;
+.curvebox {
+  background-color: #3168c5;
+  color: white;
+
+  margin-top: 3rem;
 }
 
-.bg-image{
-    width: 100%;
-    height: 135vh;
-
-    background-image: url(https://www.wellandwell.fr/cdn/shop/files/Savon_mains.jpg?v=1721908231&width=1512);
-    background-repeat: no-repeat;
-    background-size: cover;
+.curvebox video {
+  border-radius: 2rem;
 }
 
-.productpara{
+.bg-image {
+  width: 100%;
+  height: 135vh;
 
-    font-size: 10vh;
-    font-weight: 800;
-}
-.productshowbox{
-
-    width: 72%;
-    height: 30vw;
-    padding: 3rem;
-    border: 1px solid white;
-    border-radius: 2rem;
-    line-height: normal;
-
-    background-color: rgba(255,255,255,0.3);
-}
-.fontsize{
-
-    font-size: 2.5vw;
-    font-weight: 800;
+  background-image: url(https://www.wellandwell.fr/cdn/shop/files/Savon_mains.jpg?v=1721908231&width=1512);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.movingrow{
-    overflow: hidden;
-    white-space: nowrap;
+.productpara {
+  font-size: 10vh;
+  font-weight: 800;
+}
+.productshowbox {
+  width: 72%;
+  height: 30vw;
+  padding: 3rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  line-height: normal;
 
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.fontsize {
+  font-size: 2.5vw;
+  font-weight: 800;
 }
 
-
-.movingslider{
-    display: inline-block;
-    font-size: 5rem;
-    font-weight: 800;
-    transform: translateX(-200);
-    
-}
-.movingrow2{
-    overflow: hidden;
-    white-space: nowrap;
-
+.movingrow {
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-
-.movingslider2{
-    display: inline-block;
-    font-size: 5rem;
-    font-weight: 800;
-    transform: translateX(-100);
-    
+.movingslider {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 800;
+  transform: translateX(-200);
 }
-.categoriecontainer{
-    position: relative;
+.movingrow2 {
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.categoriecontainer img{
-    border-radius: 1rem;
+.movingslider2 {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 800;
+  transform: translateX(-100);
+}
+.categoriecontainer {
+  position: relative;
+}
+
+.categoriecontainer img {
+  border-radius: 1rem;
 }
 
 .categoriecontainer p {
-    position: absolute;
-    top: 80%;
-    left: 8%;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 800;
-    width: 5vh;
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 5vh;
 }
 .categoriecontainer button {
-    position: absolute;
-    top: 80%;
-    left: 70%;
-    
+  position: absolute;
+  bottom: 18%;
+  right: 10%;
 }
-.servicepara{
-    font-size: 4rem;
-    font-weight: 800;
-    position: relative;
-    left: 60%;
-    
+.servicepara {
+  font-size: 4rem;
+  font-weight: 800;
+  position: relative;
+  left: 60%;
 }
-.simleimg{
-    position: relative;
-    
-    right: -20%;
+.simleimg {
+  position: relative;
+
+  right: -20%;
 }
 
-.services{
+.services {
+  background-color: white;
+  height: 35vh;
+  width: 45vh;
+  text-align: center;
 
-    background-color: white;
-    height: 35vh;
-    width: 45vh;
-    text-align: center;
-    
+  white-space: wrap;
 
-    white-space: wrap;
-    
-    padding-top: 2rem;
+  padding-top: 2rem;
 
-    font-size: 1.5rem;
-    font-weight: 600;
-    border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 1rem;
 }
 .services p {
- margin-top: 2rem;
+  margin-top: 2rem;
 }
-.thumb{
-
-    position: relative;
-    top: -108vh;
-    right: -45%;
+.thumb {
+  position: relative;
+  top: -108vh;
+  right: -45%;
 }
-.footerancher a{
-
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    line-height: 3rem;
-
+.footerancher a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 3rem;
 }
-.footerancher a:hover{
-    color: wheat;
-    text-decoration: underline;
-    
+.footerancher a:hover {
+  color: wheat;
+  text-decoration: underline;
 }
 .Copyright a {
-
-    text-decoration: none;
-    color: white;
-
-
+  text-decoration: none;
+  color: white;
 }
-.Copyright a:hover{
-    text-decoration: underline;
-    color: wheat;
+.Copyright a:hover {
+  text-decoration: underline;
+  color: wheat;
 }
 
-#already{
-    white-space: nowrap;
+#already {
+  white-space: nowrap;
 }
